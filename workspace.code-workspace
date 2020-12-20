@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Coding/JS_50x50_Traversy_Media/MyFinishedProjects/SoundBoard"
+		},
+		{
+			"path": "../../Coding/FrontendMentorJSnewbie/intro-component-with-signup-form-master"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "intro-component-with-signup-form-master"
+	}
+}
