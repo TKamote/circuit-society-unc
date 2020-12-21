@@ -85,15 +85,15 @@ h4 {
     }
     .panel {
         height: 35vh;
-        transform: translateY(-100px);
+        transform: translateY(-50px);
     }
     .panel:nth-of-type(2),
     .panel:nth-of-type(3) {
         display: none;
     }
     .panel h3 {
-        font-size: 14;
-        color: rgb(125, 125, 228);
+        font-size: .5rem;
+        color: rgb(178, 178, 230);
         opacity: .9;
     }
 }
