@@ -1,12 +1,26 @@
 //const title = document.querySelector('h1');
+const titleBtn1 = document.querySelector('.title-btn1');
+const landingPage = document.querySelector('.landingPage');
+const pioneers = document.querySelector('.pioneers');
 
-//all JS is for Travesy Media 50/50 below
-const labels = document.querySelectorAll('.form-control label');
 
-labels.forEach(label => {
-    label.innerHTML = label.innerText
-        .split('')
-        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
-        .join('')
-
+titleBtn1.addEventListener('click', () => {
+    landingPage.style.display = 'none';
+    pioneers.style.display = 'flex';
 })
+
+const panels = document.querySelectorAll('.panel');
+
+panels.forEach((panel) => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+    })
+})
+//console.log(panels[0]);
+
+function removeActiveClasses() {
+    panels.forEach((panel) => {
+        panel.classList.remove('active');
+    })
+};
