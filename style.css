@@ -85,7 +85,6 @@ h4 {
     }
     .panel {
         height: 35vh;
-        transform: translateY(-50px);
     }
     .panel:nth-of-type(2),
     .panel:nth-of-type(3) {
