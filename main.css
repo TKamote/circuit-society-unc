@@ -25,7 +25,7 @@ body {
   animation-duration: 2s;
   animation-fill-mode: none; }
   .landingPage-intro button {
-    margin-top: 4px;
+    margin-top: 8px;
     font-size: .4rem;
     padding: 2px 5px;
     text-transform: uppercase;
@@ -174,14 +174,14 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #F5B016;
-    background-image: url(/dist/images/bg-intro-desktop.png);
+    background-image: url(images/bg-intro-desktop.png);
     background-position: center center;
     background-size: auto;
     background-repeat: repeat; }
     .container .all-batches .batch {
-      width: 200px;
-      height: 180px;
-      background-image: url(images/PioneersNow/.jpg);
+      min-width: 200px;
+      min-height: 180px;
+      background-image: url(images/PioneersNow.jpg);
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -218,7 +218,7 @@ body {
     .container .all-batches .batch5 {
       background-image: url(images/batch5.jpg); }
     .container .all-batches .batch6 {
-      background-image: url(/dist/images/batch6.jpg); }
+      background-image: url(images/batch6.jpg); }
     .container .all-batches .batch7 {
       background-image: url(images/batch7.jpg); }
     .container .all-batches .batch8 {
@@ -232,7 +232,7 @@ body {
     .container .all-batches .batch12 {
       background-image: url(images/batch12.jpg); }
     .container .all-batches .batch13 {
-      background-image: url(/dist/images/batch13.jpg); }
+      background-image: url(images/batch13.jpg); }
     .container .all-batches .batch14 {
       background-image: url(images/batch14.jpg); }
     .container .all-batches .batch15 {
@@ -288,7 +288,9 @@ body {
     .container .footer .footer-anchor {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      justify-content: center;
+      width: 100%; }
     .container .footer .foot-a {
       padding: 5px;
       color: #f3f4f6;
@@ -358,14 +360,52 @@ body {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.5s; }
 
-@media (max-width: 480px) {
-  .pioneers {
+@media (max-width: 414px) {
+  .container .heading {
+    padding: 20px 10px 20px 10px; }
+    .container .heading div i {
+      display: flex;
+      justify-content: flex-start; }
+  .container .news-event {
+    flex-direction: column;
+    background-image: none;
+    max-width: 414; }
+    .container .news-event .news-event-left {
+      width: 100%;
+      padding: 20px 10px;
+      color: #f3f4f6;
+      line-height: 1.5rem;
+      letter-spacing: 1px; }
+    .container .news-event .news-event-right {
+      width: 100%;
+      min-height: 200px;
+      background-image: url(images/pledge.jpg); }
+  .container .upcoming-projects {
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    max-width: 375px; }
+    .container .upcoming-projects .upcoming-projects-right {
+      width: 100%;
+      padding: 20px 10px; }
+    .container .upcoming-projects .upcoming-projects-left {
+      width: 100%;
+      min-height: 200px; }
+  .container .footer {
+    padding: 20px 10px; }
+    .container .footer .footer-anchor a.foot-a {
+      font-size: .65rem; }
+    .container .footer .social-media a {
+      margin: 5px; }
+    .container .footer .social-media a i.fab {
+      font-size: 25px; }
+  .container .pioneers {
     width: 100vw; }
-  .panel:nth-of-type(3) {
+  .container .panel:nth-of-type(3) {
     display: none; }
-  .panel h3 {
+  .container .panel h3 {
     font-size: .7rem; }
-  .panel.active h3 {
+  .container .panel.active h3 {
     opacity: .9;
     color: #b1b1f1;
     transition: opacity 0.3s ease-in 0.5s; } }
