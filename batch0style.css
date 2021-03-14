@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  position: relative; }
+  body a.home {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer; }
+  body a.home:hover {
+    text-decoration: underline;
+    color: chocolate; }
+  body .pioneers {
+    display: flex;
+    width: 90vw; }
+    body .pioneers .panel {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 60vh;
+      border-radius: 50px;
+      color: #cfcff1;
+      cursor: pointer;
+      flex: 0.5;
+      margin: 10px;
+      position: relative;
+      transition: flex 0.7s ease-in; }
+    body .pioneers .panel h3 {
+      font-size: 24px;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      margin: 0;
+      opacity: 0; }
+    body .pioneers .panel.active {
+      flex: 5; }
+    body .pioneers .panel.active h3 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.5s; }
+
+@media (max-width: 480px) {
+  body .pioneers {
+    width: 100vw; }
+    body .pioneers .panel:nth-of-type(2),
+    body .pioneers .panel:nth-of-type(3) {
+      display: none; }
+    body .pioneers .panel h3 {
+      font-size: .7rem; }
+    body .pioneers .panel.active h3 {
+      opacity: .9;
+      color: #b1b1f1;
+      transition: opacity 0.3s ease-in 0.5s; } }
